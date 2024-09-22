@@ -363,6 +363,11 @@ từ đó item cuối cùng sẽ không có margin-bottom
 /* Cart end */
 
 /* Slider start */
+.slider .container {
+    display: flex;
+    justify-content: space-between;
+}
+
 .slider .container .side_bar {
     width: 300px;
     background: #fff;
@@ -384,11 +389,40 @@ từ đó item cuối cùng sẽ không có margin-bottom
     font-weight: 500;
     color: var(--dark-color);
     border-top: 1px solid var(--border-color);
-    transition: 0.3s ease;
+    transition: 0.3s ease-in-out;
 }
 
 .slider .container .side_bar a:hover {
     color: var(--main-color);
 }
+
+/* Cấu hình swiper start */
+.slider .container .slider-swp {
+    width: calc(100% - 350px);
+    overflow: hidden;
+    /* position: relative Đưa nút nhỏ tròn tròn vào slider */
+    position: relative;
+}
+
+.slider .container .slider-swp img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: left top;
+}
+.slider .container .slider-swp .swiper-pagination span {
+    background: #fff;
+    opacity: 1;
+}
+
+/* Cấu hình nút nhỏ tròn tròn vào slider ghi đè cấu hình */
+.swiper-pagination-bullet-active {
+    background: var(--main-color) !important;
+    width: 35px !important;
+    height: 8px !important;
+    border-radius: 30px !important;
+}
+
+/* Cấu hình swiper end */
 
 /* Slider end */
