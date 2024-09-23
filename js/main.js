@@ -51,7 +51,7 @@ function getCartItems() {
                         </h4>
                         <p class="price_cart">$${product_cart[i].price}</p>
                     </div>
-                    <button onclick="remove_from_cart(${i})" class="delete_item">
+                    <button onclick="remove_from_cart(${i}, ${product_cart[i].id})" class="delete_item">
                         <i class="fa-solid fa-trash-can"></i>
                     </button>
                 </div>
@@ -71,21 +71,30 @@ function getCartItems() {
     price_cart_total.innerHTML = `$${total_price}`;
 }
 
-function remove_from_cart(index) {
+function remove_from_cart(index, id) {
     product_cart.splice(index, 1);
     getCartItems();
 
-    //Lấy tất cả các nút thêm sản phẩm vào giỏ hàng
+    //Xóa class active của nút thêm sản phẩm vào giỏ hàng
     let addToCartButtons = document.querySelectorAll(".fa-cart-plus");
-    //Duyệt qua từng nút thêm sản phẩm vào giỏ hàng và xóa class active
+    //Xóa class active của thằng nào có id trùng với index
     for (let i = 0; i < addToCartButtons.length; i++) {
-        addToCartButtons[i].classList.remove("active");
-
-        //Duyệt qua từng sản phẩm trong giỏ hàng và thêm class active vào nút thêm sản phẩm vào giỏ hàng nếu sản phẩm đó đã được thêm vào giỏ hàng
-        product_cart.forEach((product) => {
-            if (product.id == i) {
-                addToCartButtons[i].classList.add("active");
-            }
-        });
+        if (addToCartButtons[i].id == id) {
+            addToCartButtons[i].classList.remove("active");
+        }
     }
+
+    // //Lấy tất cả các nút thêm sản phẩm vào giỏ hàng
+    // let addToCartButtons = document.querySelectorAll(".fa-cart-plus");
+    // //Duyệt qua từng nút thêm sản phẩm vào giỏ hàng và xóa class active
+    // for (let i = 0; i < addToCartButtons.length; i++) {
+    //     addToCartButtons[i].classList.remove("active");
+
+    //     //Duyệt qua từng sản phẩm trong giỏ hàng và thêm class active vào nút thêm sản phẩm vào giỏ hàng nếu sản phẩm đó đã được thêm vào giỏ hàng
+    //     product_cart.forEach((product) => {
+    //         if (product.id == i) {
+    //             addToCartButtons[i].classList.add("active");
+    //         }
+    //     });
+    // }
 }
