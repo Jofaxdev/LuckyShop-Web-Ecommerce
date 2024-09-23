@@ -35,4 +35,5 @@ var swiper = new Swiper(".sale_sec", {
         prevEl: ".swiper-button-prev",
     },
     loop: true,
+    loopFillGroupWithBlank: true,
 });
