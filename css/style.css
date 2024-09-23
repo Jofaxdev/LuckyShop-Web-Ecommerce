@@ -684,6 +684,35 @@ từ đó item cuối cùng sẽ không có margin-bottom
     background-color: var(--main-color);
 }
 
+/* hiện icon khi hover vào sản phẩm */
 .product:hover .icons {
     right: 20px;
+}
+
+/*sliders start*/
+.mySwiper {
+    position: relative;
+    overflow: hidden;
+    padding: 10px;
+}
+
+.slide .container .mySwiper .btn_Swip {
+    position: absolute;
+    top: 35px;
+    right: 0;
+    background: var(--main-color);
+    color: #fff;
+    font-weight: bold;
+    padding: 0px 18px;
+    border-radius: 5px;
+}
+
+/* Ghi đè cấu hình nút next và prev */
+/* font-size để chỉnh kích thước của mũi tên */
+.slide .container .mySwiper .btn_Swip::after {
+    font-size: 25px;
+}
+
+.slide .container .mySwiper .btn_Swip.swiper-button-prev {
+    left: calc(100% - 90px);
 }

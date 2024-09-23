@@ -141,7 +141,7 @@
                 </div>
 
                 <!-- Swiper -->
-                <div class="slider-swp mySwiper">
+                <div class="slider-swp">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
                             <a href="#">
@@ -240,13 +240,16 @@
 
         <section class="slide slide_sale">
             <div class="container">
-                <div class="sale_sec">
+                <!-- mySwiper tích hợp vào -->
+                <div class="sale_sec mySwiper">
                     <div class="top_slide">
                         <h2>On sale <span>product</span></h2>
                     </div>
-
-                    <div class="products">
-                        <div class="product">
+                    <!-- swiper-wrapper tích hợp vào -->
+                    <div id="swiper_items_sale" class="products swiper-wrapper">
+                        <!-- swiper-slide tích hợp vào -->
+                        <!-- Phần này là các item được sale được cắc ra đưa qua items_home để tích hợp dữ liệu json -->
+                        <!-- <div class="product swiper-slide">
                             <div class="icons">
                                 <span>
                                     <i class="fa-solid fa-cart-plus"></i>
@@ -288,31 +291,20 @@
                                 <p><span>$220</span></p>
                                 <p class="old_price">$240</p>
                             </div>
-                        </div>
+                        </div> -->
                     </div>
+                    <div class="swiper-button-next btn_Swip"></div>
+                    <div class="swiper-button-prev btn_Swip"></div>
                 </div>
             </div>
         </section>
     </body>
 
-    <script src="./js/main.js"></script>
     <!-- Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
     <!-- Initialize Swiper -->
-    <script>
-        var swiper = new Swiper(".mySwiper", {
-            pagination: {
-                el: ".swiper-pagination",
-                //Thêm dynamicBullets và clickable
-                dynamicBullets: true,
-                clickable: true,
-            },
-            //Thêm autoplay
-            autoplay: {
-                delay: 2500,
-            },
-            loop: true,
-        });
-    </script>
+    <script src="./js/swiper.js"></script>
+    <script src="./js/main.js"></script>
+    <script src="./js/items_home.js"></script>
 </html>
