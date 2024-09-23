@@ -26,9 +26,20 @@ function add_to_cart(id, btn) {
     getCartItems();
 }
 
+//Lấy thống báo số lượng trên Header
+let count_item = document.querySelector(".count_item");
+//Lấy thống báo tổng tiền của giỏ hàng cần hiển thị trên Header
+let price_cart_Head = document.querySelector(".price_cart_Head");
+
+//Lấy thẻ hiển thị số lượng sản phẩm và tổng giá tiền trong giỏ hàng
+let count_item_cart = document.querySelector(".count_item_cart");
+let price_cart_total = document.querySelector(".price_cart_total");
+
+//Lấy thẻ hiển thị các sản phẩm trong giỏ hàng
 var items_in_cart = document.querySelector(".items_in_cart");
 
 function getCartItems() {
+    let total_price = 0;
     let items_c = "";
     for (let i = 0; i < product_cart.length; i++) {
         items_c += `
@@ -45,8 +56,19 @@ function getCartItems() {
                     </button>
                 </div>
         `;
+
+        total_price += product_cart[i].price;
     }
+
     items_in_cart.innerHTML = items_c;
+    //Hiển thị tổng tiền của giỏ hàng lên Header
+    price_cart_Head.innerHTML = `$${total_price}`;
+    //Hiển thị số lượng sản phẩm trong giỏ hàng lên Header
+    count_item.innerHTML = product_cart.length;
+    //Hiển thị số lượng sản phẩm trong giỏ hàng trong cart
+    count_item_cart.innerHTML = product_cart.length + " Item in Cart";
+    //Hiển thị tổng tiền của giỏ hàng trong cart
+    price_cart_total.innerHTML = `$${total_price}`;
 }
 
 function remove_from_cart(index) {
