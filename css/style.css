@@ -1322,3 +1322,45 @@ header .links ul .btn_close_menu {
 }
 
 /* Item_detail page end */
+
+/* Responsive detail item */
+@media (max-width: 1000px) {
+    .item_detail .container {
+        flex-direction: column;
+    }
+
+    .item_detail .img_item {
+        width: 50%;
+        margin-bottom: 40px;
+        margin: auto;
+    }
+
+    .item_detail .details_item {
+        width: 100%;
+    }
+}
+@media (max-width: 700px) {
+    .item_detail .img_item {
+        width: 80%;
+    }
+}
+
+@media (max-width: 500px) {
+    .item_detail .details_item h1 {
+        font-size: 20px;
+    }
+
+    .item_detail .details_item .text_p {
+        font-size: 14px;
+    }
+
+    .item_detail .details_item h4 {
+        font-size: 18px;
+    }
+
+    .item_detail .details_item button {
+        padding: 16px;
+    }
+}
+
+/* Responsive detail item end*/
