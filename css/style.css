@@ -840,3 +840,124 @@ từ đó item cuối cùng sẽ không có margin-bottom
 }
 
 /* Newsletter end*/
+
+/* Back to top start */
+.back_to_top {
+    background-color: #4d5669;
+}
+
+.back_to_top p {
+    padding: 22px 0;
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+/* Back to top end*/
+
+/* Footer start */
+footer {
+    background-color: #394150;
+}
+
+footer .container {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 0;
+}
+
+footer .container .big_row {
+    width: 35%;
+}
+
+footer .container .big_row .hotline {
+    display: flex;
+    align-content: center;
+    margin: 15px 0;
+    gap: 10px;
+}
+
+footer .container .big_row .hotline i {
+    color: var(--main-color);
+    font-size: 60px;
+}
+
+footer .container .big_row .hotline h5 {
+    color: #fff;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+footer .container .big_row .hotline h6 {
+    color: var(--main-color);
+    font-size: 18px;
+}
+
+footer .container .big_row p {
+    width: 90%;
+    color: #b1b1b1;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+footer .container .row {
+    width: 22%;
+}
+
+footer .container .row h4 {
+    color: #fff;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+footer .container .row .links {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+
+footer .container .row .links a {
+    color: #b1b1b1;
+    font-size: 14px;
+    position: relative;
+    left: 0;
+    transition: 0.3s ease-in-out;
+}
+
+footer .container .row .links a:hover {
+    color: var(--main-color);
+    left: 8px;
+}
+
+footer .bottom_footer {
+    background-color: #202935;
+}
+
+footer .bottom_footer .container {
+    padding: 20px 0;
+    align-items: center;
+}
+
+footer .bottom_footer .container span {
+    color: var(--main-color);
+}
+
+footer .bottom_footer .payment_img {
+    display: flex;
+    gap: 10px;
+}
+
+footer .bottom_footer .payment_img img {
+    filter: grayscale(100%);
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+footer .bottom_footer .payment_img img:hover {
+    filter: grayscale(0%);
+}
+
+/* Footer end */
