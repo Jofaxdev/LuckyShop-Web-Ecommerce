@@ -1215,3 +1215,110 @@ header .links ul .btn_close_menu {
     }
     /* Responsive footer end*/
 }
+
+/* -------Responsive end------- */
+
+/* Item_detail page start */
+.item_detail {
+    background: #fff;
+    padding: 50px 0;
+}
+
+.item_detail .container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.item_detail .img_item {
+    width: 40%;
+}
+
+.item_detail .img_item .big_img img {
+    width: 100%;
+}
+
+.item_detail .img_item .sm_imgs {
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.item_detail .img_item .sm_imgs img {
+    width: 24%;
+}
+
+.item_detail .details_item {
+    width: 58%;
+}
+
+.item_detail .details_item h1 {
+    margin-bottom: 30px;
+}
+
+.item_detail .details_item h5 {
+    font-weight: 500;
+    margin-bottom: 20px;
+    font-size: 16px;
+}
+
+.item_detail .details_item h5 span {
+    color: var(--main-color);
+}
+.item_detail .details_item .price {
+    justify-content: left;
+    margin: 20px 0;
+    gap: 20px;
+}
+
+.item_detail .details_item .price p {
+    font-size: 22px;
+}
+
+.item_detail .details_item .text_p {
+    line-height: 1.5;
+}
+
+.item_detail .details_item h4 {
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+.item_detail .details_item button {
+    border: none;
+    outline: none;
+    background-color: var(--main-color);
+    color: var(--dark-color);
+    padding: 14px 35px;
+    border-radius: 5px;
+    margin: 30px 0;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: 0.3s;
+}
+
+.item_detail .details_item button:hover {
+    scale: 1.1;
+}
+
+.item_detail .details_item .icons {
+    display: flex;
+    gap: 10px;
+}
+
+.item_detail .details_item .icons i {
+    width: 50px;
+    height: 50px;
+    background-color: #efeeee;
+    text-align: center;
+    line-height: 50px;
+    border-radius: 50%;
+    border: 1px solid var(--border-color);
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+.item_detail .details_item .icons i:hover {
+    background-color: var(--main-color);
+}
+
+/* Item_detail page end */
