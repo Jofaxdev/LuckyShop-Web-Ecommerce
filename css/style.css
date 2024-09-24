@@ -975,10 +975,30 @@ header .links ul .btn_close_menu {
     header .top-nav .search {
         width: 420px;
     }
+
+    /* Responsive side_bar */
+    .slider .container .side_bar {
+        display: none;
+    }
+
+    .slider .container .slider-swp {
+        width: 100%;
+    }
+    /* Responsive side_bar end */
+
+    /* Responsive features */
+    .features .container .feature_item {
+        margin-bottom: 10px;
+    }
+    /* Responsive features end*/
 }
 
 /*Cho thành phần tử search thành thứ 3 wrap xuống dòng*/
 @media (max-width: 900px) {
+    body {
+        margin-top: 240px;
+    }
+
     header .top-nav {
         flex-wrap: wrap;
     }
@@ -1047,6 +1067,25 @@ header .links ul .btn_close_menu {
     header .links ul.active .bg-overlay {
         right: 0;
     }
+
+    /* Responsive banner */
+    .banner {
+        margin: 0;
+    }
+    .slide {
+        margin-bottom: 50px;
+    }
+    /* Responsive banner end*/
+
+    /* Responsive product */
+    /* ẩn img banner bên trái phải khi responsive */
+    .slide_product .categ_img {
+        display: none;
+    }
+    .slide_product .product_swip {
+        width: 100%;
+    }
+    /* Responsive product end*/
 }
 
 @media (max-width: 500px) {
@@ -1068,5 +1107,35 @@ header .links ul .btn_close_menu {
     header .links ul {
         width: 100%;
         left: -100%;
+    }
+
+    /* Responsive giỏ hàng */
+    .cart {
+        width: 100%;
+        right: -100%;
+    }
+    /* Responsive giỏ hàng end*/
+
+    /* Responsive sale product */
+    .product .name_product a {
+        font-size: 13px;
+    }
+
+    .product {
+        padding: 15px 10px;
+    }
+
+    .stars i {
+        font-size: 14px;
+    }
+    /* Responsive sale product  end*/
+    /* Responsive banner*/
+    .slide {
+        margin-bottom: 30px;
+    }
+    /* Responsive banner end*/
+
+    .top_slide h2 {
+        font-size: 16px;
     }
 }
