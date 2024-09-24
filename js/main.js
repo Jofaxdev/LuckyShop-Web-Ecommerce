@@ -22,8 +22,11 @@ function close_menu() {
     menu.classList.remove("active");
 }
 
-
-
+//Thay đổi ảnh khi dí chuột vào detail item
+let bigImg = document.querySelector("#bigImg");
+function ChangeItemImage(img) {
+    bigImg.src = img;
+}
 
 // add items to cart
 
