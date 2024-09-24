@@ -991,6 +991,38 @@ header .links ul .btn_close_menu {
         margin-bottom: 10px;
     }
     /* Responsive features end*/
+
+    /* Responsive newsletter */
+    .newsletter .container {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .newsletter .container .text {
+        width: 100%;
+    }
+
+    .newsletter .newsletter_form {
+        width: 70%;
+    }
+
+    /* Responsive newsletter end*/
+
+    /* Responsive footer */
+    footer .container {
+        flex-wrap: wrap;
+    }
+
+    footer .container .row {
+        width: 40%;
+        margin-bottom: 20px;
+    }
+    footer .container .big_row {
+        width: 50%;
+        margin-bottom: 20px;
+    }
+
+    /* Responsive footer end*/
 }
 
 /*Cho thành phần tử search thành thứ 3 wrap xuống dòng*/
@@ -1086,6 +1118,18 @@ header .links ul .btn_close_menu {
         width: 100%;
     }
     /* Responsive product end*/
+
+    /* Responsive newsletter*/
+    .newsletter .text h4 {
+        font-size: 25px;
+    }
+    .newsletter .text p {
+        font-size: 14px;
+    }
+    .newsletter .text h6 {
+        font-size: 18px;
+    }
+    /* Responsive newsletter end*/
 }
 
 @media (max-width: 500px) {
@@ -1138,4 +1182,36 @@ header .links ul .btn_close_menu {
     .top_slide h2 {
         font-size: 16px;
     }
+
+    /* Responsive newsletter*/
+    .newsletter .newsletter_form {
+        width: 100%;
+    }
+    .newsletter .text h4 {
+        font-size: 23px;
+    }
+    .newsletter .text p {
+        font-size: 13px;
+    }
+    .newsletter .text h6 {
+        font-size: 16px;
+    }
+
+    .newsletter .newsletter_form button {
+        width: 120px;
+        font-size: 15px;
+    }
+    .newsletter .newsletter_form input {
+        padding: 16px 140px 16px 20px;
+        font-size: 15px;
+    }
+
+    /* Responsive newsletter end*/
+
+    /* Responsive footer */
+    footer .container .row,
+    footer .container .big_row {
+        width: 100%;
+    }
+    /* Responsive footer end*/
 }
