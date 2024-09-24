@@ -10,6 +10,21 @@ function close_cart() {
     cart.classList.remove("active");
 }
 
+//open and close menu
+
+var menu = document.querySelector(".menu");
+
+function open_menu() {
+    menu.classList.add("active");
+}
+
+function close_menu() {
+    menu.classList.remove("active");
+}
+
+
+
+
 // add items to cart
 
 //Khai báo biến all_products_json để lưu trữ dữ liệu từ file items.json thông quan fetch API trong items_home.js

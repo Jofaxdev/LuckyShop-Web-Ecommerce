@@ -44,7 +44,25 @@
             <!-- /* Nav start*/ -->
             <nav>
                 <div class="links container">
-                    <ul>
+                    <!-- Bổ sung cho responsive -->
+                    <i
+                        onclick="open_menu()"
+                        class="fa-solid fa-bars btn_open_menu"
+                    ></i>
+                    <ul class="menu">
+                        <!-- Bổ sung cho responsive -->
+                        <span onclick="close_menu()" class="bg-overlay"></span>
+                        <!-- Bổ sung cho responsive -->
+                        <i
+                            onclick="close_menu()"
+                            class="fa-regular fa-circle-xmark btn_close_menu"
+                        ></i>
+                        <!-- Bổ sung cho responsive -->
+                        <img
+                            class="logo_menu"
+                            src="./img/logo-black.png"
+                            alt="logo"
+                        />
                         <li class="active">
                             <a href="">Home</a>
                         </li>
