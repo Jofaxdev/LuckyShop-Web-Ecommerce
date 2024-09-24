@@ -1364,3 +1364,49 @@ header .links ul .btn_close_menu {
 }
 
 /* Responsive detail item end*/
+
+/* all product page start*/
+
+.top_page {
+    text-align: center;
+    padding: 50px 0;
+}
+
+.top_page h1 {
+    font-size: 40px;
+    color: var(--main-color);
+    margin-bottom: 25px;
+}
+
+.top_page p {
+    font-size: 18px;
+    width: 60%;
+    margin: auto;
+    color: var(--parg-color);
+}
+
+.all_product .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.all_product .filter {
+    background-color: #fff;
+    width: 280px;
+    height: 300px;
+}
+
+.all_product .products_dev {
+    width: calc(100% - 300px);
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2.5%;
+}
+
+.all_product .products_dev .product {
+    width: 22%;
+    margin-bottom: 30px;
+}
+
+/* all product page end*/
