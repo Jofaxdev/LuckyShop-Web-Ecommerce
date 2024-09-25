@@ -1,3 +1,9 @@
+// Open and close filter
+var filter = document.querySelector(".filter");
+function open_close_filter() {
+    filter.classList.toggle("active");
+}
+
 fetch("js/items.json")
     .then((response) => response.json())
     .then((data) => {
